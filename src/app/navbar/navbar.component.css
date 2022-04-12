@@ -1,0 +1,45 @@
+.icons {
+  font-size: 19px;
+}
+
+a:hover {
+  color: black;
+  background-color: rgba(30, 30, 197, 0.724);
+  font-weight: 900;
+}
+
+.side-bar {
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+#main_dashboard {
+  width: 100%;
+
+}
+
+.fa-sign-out {
+  font-size: 19px;
+}
+
+.spacer {
+  margin-left: 8px;
+  cursor: not-allowed;
+}
+
+.contnet {
+  font-size: 14px;
+  color: black;
+  padding: 20px;
+}
+
+#sidenav {
+  background-color: gainsboro;
+}
+
+.active {
+  color: black;
+  background-color: rgba(28, 28, 195, 0.724);
+  font-weight: 900;
+}

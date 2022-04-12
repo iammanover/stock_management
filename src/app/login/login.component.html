@@ -1,0 +1,21 @@
+<form [formGroup]="loginform" class="login-form center">
+  <h2>LogIn</h2>
+  <mat-form-field appearance="fill">
+    <mat-label>Username</mat-label>
+    <input formControlName="username" matInput type="text">
+    
+    <!-- <mat-error style="color: red;" *ngIf="username && username.invalid && username.touched">
+      username is required></mat-error> -->
+   
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Password</mat-label>
+    <input formControlName="password" matInput [type]="showPassword ? 'text' : 'password'">
+    <mat-icon matSuffix (click)="togglePasswordVisibility()">visibility</mat-icon>
+    <!-- <mat-error style="color: red;"
+    *ngIf="password && password.invalid && password.touched">
+      password is required
+    </mat-error> -->
+  </mat-form-field>
+  <button mat-raised-button type="submit"  color="primary"><a routerLink="/homing" class="Tag" (click)="resetdata()"> Login </a></button>
+</form>

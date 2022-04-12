@@ -1,0 +1,20 @@
+.home {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.home img {
+  width: 856px;
+  height: 435px;
+  background-size: cover;
+  background-position: center;
+  border:1px solid black;
+}
+.btns{
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+}

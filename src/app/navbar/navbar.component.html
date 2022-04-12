@@ -1,0 +1,52 @@
+<div id="main_dashboard">
+  <mat-toolbar color="primary" class="mat-elevation-z6">
+    <!-- <button mat-icon-button>
+      <mat-icon (click)="sidenav.toggle();">menu</mat-icon>
+    </button> -->
+    <span class="side-bar"  routerLink="homing" > Pro Stock</span>
+
+    <mat-icon class="spacer">dashboard</mat-icon>
+    <!-- <div class="spacer"></div> -->
+    <span fxFlex></span>
+    <div>
+      <a mat-button class="menu" routerLink="homing" routerLinkActive="active">
+        <mat-icon class="icons" routerLinkActive="active" >
+          home</mat-icon>Home
+      </a>
+      <!-- [routerLinkActiveOptions]="{exact:true}" -->
+      <a mat-button class="menu" routerLink="/products" routerLinkActive="active">
+        <mat-icon  class="icons">shop</mat-icon>Products
+      </a>
+      <a mat-button class="menu" routerLink="/login" routerLinkActive="active">
+        <i class="fa fa-sign-out"></i> SignOut
+      </a>
+
+      <button mat-raised-button color="primary" class="menu" routerLink="/cart" >
+        <i style="font-size: 19px;" class="fas fa-cart-plus"></i>
+        <div style="font-size: 10px;" class="badge bg-danger">{{totalItem}}</div>
+      </button>
+    </div>
+  </mat-toolbar>
+</div>
+<mat-sidenav-container>
+  <!-- <mat-sidenav #sidenav opened="true" mode="side" id="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="home" routerLinkActive="active" >Home</a>
+    
+      <a mat-list-item routerLink="/product" routerLinkActive="active">Products</a>
+      <a mat-list-item routerLink="/product" routerLinkActive="active">Sales</a>
+      <a mat-list-item routerLink="/cart"  routerLinkActive="active">Your Cart</a>
+      <a mat-list-item routerLink="/login" routerLinkActive="active">Sign out</a>
+    </mat-nav-list>
+  </mat-sidenav> -->
+  <!-- <mat-sidenav-content>
+    <div style="height:90vh; background-color: white; color: white;">
+      <div class="contnet">
+
+        <app-products></app-products>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
