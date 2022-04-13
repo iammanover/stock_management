@@ -34,9 +34,7 @@ export class ProductsComponent implements OnInit {
   }
   addtocart(item: any) {
     this.cartService.addtoCart(item);
-    if (item.quantity != 2) {
-      item.quantity += 1;
-    }
+    
   }
   filter(category: string) {
     this.filterCategory = this.productList
