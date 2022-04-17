@@ -21,6 +21,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
 import { FilterPipe } from './filter.pipe';
 import { HomeComponent } from './home/home.component';
+import { StockComponent } from './stock/stock.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { HomeComponent } from './home/home.component';
     CartComponent,
     ProductsComponent,
     FilterPipe,
-    HomeComponent
+    HomeComponent,
+    StockComponent
   ],
   imports: [
     BrowserModule,
