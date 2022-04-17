@@ -56,19 +56,19 @@ export class ProductService {
 
    }
 
-   addEmployee(emp : Product): Observable<Product> {
+   addProduct(emp : Product): Observable<Product> {
      return this.http.post<Product>(this.addEmpURL,emp);
    }
 
-   getAllEmployee(): Observable<Product[]>{
+   getAllProduct(): Observable<Product[]>{
      return this.http.get<Product[]>(this.getEmpURL);
    }
 
-   updateEmployee(emp :Product) : Observable<Product>{
+   updateProduct(emp :Product) : Observable<Product>{
      return this.http.put<Product>(this.updateEmpUrl, emp);
    }
 
-   deleteEmployee(emp : Product) : Observable<Product> {
+   deleteProduct(emp : Product) : Observable<Product> {
      return this.http.delete<Product>(this.deleteEmpUrl+'/'+emp.id);
    }
   

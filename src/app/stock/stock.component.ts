@@ -19,7 +19,7 @@ export class StockComponent implements OnInit {
 
   ngOnInit(): void {
 
-    this.getAllEmployee();
+    this.getAllProduct();
 
     this.productDetail = this.formBuilder.group({
       id : [''],
@@ -37,17 +37,17 @@ export class StockComponent implements OnInit {
     this.empObj.Quantity = this.productDetail.value.email;
     this.empObj.Price = this.productDetail.value.salary;
 
-    this.empService.addEmployee(this.empObj).subscribe(res=>{
+    this.empService.addProduct(this.empObj).subscribe(res=>{
         console.log(res);
-        this.getAllEmployee();
+        this.getAllProduct();
     },err=>{
         console.log(err);
     });
 
   }
 
-  getAllEmployee() {
-    this.empService.getAllEmployee().subscribe(res=>{
+  getAllProduct() {
+    this.empService.getAllProduct().subscribe(res=>{
         this.empList = res;
     },err=>{
       console.log("error while fetching data.")
@@ -69,9 +69,9 @@ export class StockComponent implements OnInit {
     this.empObj.Quantity = this.productDetail.value.email;
     this.empObj.Price = this.productDetail.value.salary;
 
-    this.empService.updateEmployee(this.empObj).subscribe(res=>{
+    this.empService.updateProduct(this.empObj).subscribe(res=>{
       console.log(res);
-      this.getAllEmployee();
+      this.getAllProduct();
     },err=>{
       console.log(err);
     })
@@ -80,10 +80,10 @@ export class StockComponent implements OnInit {
 
   deleteProduct(pro : Product) {
 
-    this.empService.deleteEmployee(pro).subscribe(res=>{
+    this.empService.deleteProduct(pro).subscribe(res=>{
       console.log(res);
       alert('Product deleted successfully');
-      this.getAllEmployee();
+      this.getAllProduct();
     },err => {
       console.log(err);
     });
