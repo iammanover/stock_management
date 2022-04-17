@@ -64,7 +64,7 @@ export class ProductService {
      return this.http.get<Product[]>(this.getEmpURL);
    }
 
-   updateProduct(emp :Product) : Observable<Product>{
+   updateproduct(emp :Product) : Observable<Product>{
      return this.http.put<Product>(this.updateEmpUrl, emp);
    }
 

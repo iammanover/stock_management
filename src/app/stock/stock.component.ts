@@ -63,13 +63,13 @@ export class StockComponent implements OnInit {
   }
 
   updateProduct() {
-
+    console.log(this.productDetail);
     this.empObj.id = this.productDetail.value.id;
     this.empObj.Name = this.productDetail.value.name;
     this.empObj.Quantity = this.productDetail.value.email;
     this.empObj.Price = this.productDetail.value.salary;
 
-    this.empService.updateProduct(this.empObj).subscribe(res=>{
+    this.empService.updateproduct(this.empObj).subscribe(res=>{
       console.log(res);
       this.getAllProduct();
     },err=>{
