@@ -1,0 +1,14 @@
+{
+  "posts": [
+    {
+      "id": "100",
+      "Name": "Laptop",
+      "Quantity": 20,
+      "Price": 45000
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

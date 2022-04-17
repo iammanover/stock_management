@@ -1,6 +1,9 @@
 export class Product {
-  ProductId :string='';
-  ProductName : string='';
-  ProductQuantity : number=0;
-  ProductPrice :number =0;
+
+ 
+  id : number=0;
+    Name : string='';
+    Quantity :number =0;
+    Price :number =0;
+  
 }

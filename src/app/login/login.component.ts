@@ -37,7 +37,11 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
 
   }
-
+  onsubmit(){
+    if(this.loginform.invalid){
+      return;
+    }
+  }
  
   
 }
