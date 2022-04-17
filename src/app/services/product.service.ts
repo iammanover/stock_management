@@ -16,10 +16,10 @@ export class ProductService {
 
   constructor(private http : HttpClient) {
 
-    this.addProductURL = 'http://localhost:5432/pro/addProduct';
-    this.getProductURL = 'http://localhost:5432/emp/getAll';
-    this.updateProductUrl = 'http://localhost:5432/emp/updateProduct';
-    this.deleteProductUrl = 'http://localhost:5432/emp/deleteProductById';
+    this.addProductURL = '';
+    this.getProductURL = '';
+    this.updateProductUrl = '';
+    this.deleteProductUrl = '';
     5432
    }
 
